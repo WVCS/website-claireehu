@@ -1,9 +1,72 @@
-<html>
-testing
 
+<html 
+<head>
 
+    <title>CSP APPS</title>
+    <style>
+        body {
+            font-family: Times, sans-serif;
+            text-align: center;
+        }
 
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
 
+        nav li {
+            display: inline;
+            margin: 0 10px;
+            cursor: pointer;
+            color: white;
+        }
 
+        nav li:hover {
+            text-decoration: underline;
+        }
 
+        h1 {
+            margin-top: 50px
+      }
+      
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li onclick="showPage('home')">HOME</li>
+            <li onclick="showPage('game')">GAME</li>
+            <li onclick="showPage('quiz')">QUIZ</li>
+        </ul>
+    </nav>
+    <div id="home" class="page">
+        <h1>CSP APPS</h1>
+        <p>Check out my csp apps! click on game or quiz
+           <img src="https://pbs.twimg.com/media/DE3bsqOV0AE0b3d.jpg" alt="Moomin Image" class="home-image">
+         
+      </p>
+    
+    </div>
+    <div id="game" class="page">
+        <h1>Game Page</h1>
+        <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/5r_zpR9GidB2m3G7erX43UNgME2Adf-8HfduAT-NFWn/embed?nosource"></iframe>
+    </div>
+    <div id="quiz" class="page">
+        <h1>Quiz Page</h1>
+        <iframe width="392" height="620" style="border: 0px;" src="https://studio.code.org/projects/applab/NvgGAhHObAIQn1baBZJXcx0PoXXvGgeQ7A9OsPQqCt9/embed?nosource"></iframe>
+    </div>
+    <script>
+        function showPage(pageId) {
+            var pages = document.querySelectorAll('.page');
+            pages.forEach(function(page) {
+                page.style.display = 'none';
+            });
+            document.getElementById(pageId).style.display = 'block';
+        }
+
+        // Show the home page by default
+        document.getElementById('home').style.display = 'block';
+    </script>
+</body>
 </html>
+
