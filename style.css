@@ -1,3 +1,35 @@
-body {
-
+body{
+  background-color: #121D33
 }
+h1 {
+  color: white;
+}
+
+
+nav {
+  list-style-type: none;
+  background-color:748B97;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  color: white;
+  padding: 1px;
+  text-align: center;
+}
+ h1 {
+            margin-top: 80px; 
+        }
+
+li{
+  
+  display: inline;
+  padding: 26px;
+}
+
+li; hover{
+  background; dark-blue
+  
+  
+
+            
